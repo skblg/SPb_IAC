@@ -1,0 +1,42 @@
+{
+  "name": "vkbot",
+  "version": "1.7.0",
+  "description": "Bot for VK/TG",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "easyvk": "^2.8.2",
+    "express": "^4.17.1",
+    "form-data": "^3.0.0",
+    "http": "0.0.1-security",
+    "ioredis": "^4.27.5",
+    "jimp": "^0.10.3",
+    "justewg-common": "github:justewg/common",
+    "moment": "^2.27.0",
+    "node-vk-bot-api": "^3.3.6",
+    "node-vk-sdk": "^1.1.7",
+    "plural-ru": "^2.0.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "telegraf": "^4.4.2",
+    "vk-io": "^4.3.2",
+    "workerpool": "^6.1.5"
+  },
+  "scripts": {
+    "start": "echo \"vkbot_backend_started\" | xargs redis-cli -h iac.yc.db -a ourspbPassw0rd DEL && nodemon app.js",
+    "build": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.iac.spb.ru:egs-out/vkbot.git"
+  },
+  "keywords": [],
+  "author": "IAC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.iac.spb.ru/egs-out/vkbot/-/issues"
+  },
+  "homepage": "https://gitlab.iac.spb.ru/egs-out/vkbot/-/issues#readme"
+}
